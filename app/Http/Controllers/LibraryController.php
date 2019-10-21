@@ -21,4 +21,11 @@ class LibraryController extends Controller
         $books = Book::where('name', $name)->get();
         return $books;
     }
+
+    public function getBooksByYear(int $year) {
+        $books = Book::where('year', $year)->get();
+        return $books;
+    }
+
+
 }
