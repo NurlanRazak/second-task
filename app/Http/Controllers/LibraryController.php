@@ -27,5 +27,8 @@ class LibraryController extends Controller
         return $books;
     }
 
-
+    public function getBooksByManufacture(string $man) {
+        $books = Book::where('manufacture', $man)->get();
+        return $books;
+    }
 }

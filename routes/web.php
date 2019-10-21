@@ -19,3 +19,4 @@ Route::get('/book/{id}', 'LibraryController@getBookById');
 Route::get('/books/authors/{author}', 'LibraryController@getBooksByAuthor');
 Route::get('/books/names/{name}', 'LibraryController@getBooksByName');
 Route::get('/books/year/{year}', 'LibraryController@getBooksByYear');
+Route::get('/books/manufacture/{man}', 'LibraryController@getBooksByManufacture');
