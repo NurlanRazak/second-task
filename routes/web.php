@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/book/{id}', 'LibraryController@getBookById');
-Route::get('/{author}/books', 'LibraryController@getBooksByAuthor');
+Route::get('/books/authors/{author}', 'LibraryController@getBooksByAuthor');
+Route::get('/books/names/{name}', 'LibraryController@getBooksByName');

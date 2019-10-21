@@ -17,5 +17,8 @@ class LibraryController extends Controller
         return $books;
     }
 
-
+    public function getBooksByName(string $name) {
+        $books = Book::where('name', $name)->get();
+        return $books;
+    }
 }
