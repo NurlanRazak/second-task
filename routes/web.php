@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+Route::get('/', 'LibraryController@index');
 Route::get('/book/{id}', 'LibraryController@getBookById');
 Route::get('/books/authors/{author}', 'LibraryController@getBooksByAuthor');
 Route::get('/books/names/{name}', 'LibraryController@getBooksByName');
